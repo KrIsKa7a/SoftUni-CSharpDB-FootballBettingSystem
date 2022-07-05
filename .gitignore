@@ -13,6 +13,7 @@
 **/Migrations
 appsettings.json
 appsettings.*.json
+**/Config.cs
 
 # User-specific files (MonoDevelop/Xamarin Studio)
 *.userprefs
