@@ -1,0 +1,35 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Migrations\20220704182751_IntiialSetUp.cs" />
+    <Compile Remove="Migrations\20220704182751_IntiialSetUp.Designer.cs" />
+    <Compile Remove="Migrations\20220704183715_TeamColorNullDeleteBehaviour.cs" />
+    <Compile Remove="Migrations\20220704183715_TeamColorNullDeleteBehaviour.Designer.cs" />
+    <Compile Remove="Migrations\20220704183809_TeamColorRestrictDelete.cs" />
+    <Compile Remove="Migrations\20220704183809_TeamColorRestrictDelete.Designer.cs" />
+    <Compile Remove="Migrations\20220704184009_RestrictDeleteForColorsAndTeams.cs" />
+    <Compile Remove="Migrations\20220704184009_RestrictDeleteForColorsAndTeams.Designer.cs" />
+    <Compile Remove="Migrations\20220704184105_NoActionDeleteForColorsAndTeams.cs" />
+    <Compile Remove="Migrations\20220704184105_NoActionDeleteForColorsAndTeams.Designer.cs" />
+    <Compile Remove="Migrations\20220704184259_TeamAndColorDeleteSetNull.cs" />
+    <Compile Remove="Migrations\20220704184259_TeamAndColorDeleteSetNull.Designer.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Proxies" Version="3.1.3" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="3.1.3" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="3.1.3">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\P03_FootballBetting.Data.Models\P03_FootballBetting.Data.Models.csproj" />
+  </ItemGroup>
+
+</Project>
